@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top__wrapper">
+            <div class="top_contact">
+                <div class="container">
+                    <ul class="header">
+                        <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                        </li>
+                        <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bgi">
+                <div class="container">
+                    <div class="contacts_header ">
+                        <h2 class="heading_contacts">Contact Us</h2>
+                        <p class="text contacts_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+                            maxime
+                            placeat suscipit, explicabo dolore, beatae ab minus nostrum vero, debitis accusamus commodi
+                            aspernatur natus. Velit quo deserunt animi quae a?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="contacts__content container">
+                <div class="contacts__info">
+                    <img src="img/women_sofa.svg" alt="contacts photo" style="width: 100%;">
+                    <h4 class="heading_title">ADDRESS</h4>
+                    <p class="text text_address">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ad quis
+                        ut, molestias
+                        quam amet? Natus reiciendis magnam ullam non!</p>
+                    <h4 class="heading_title">PHONE</h4>
+                    <ul class="contacts__list">
+                        <li class="contacts__list_item">
+                            <img class="icon" src="img/telephone.png" alt="telephone">
+                            <p class="text">+7-700-800-4455</p>
+                        </li>
+                        <li class="contacts__list_item">
+                            <img class="icon" src="img/telephone.png" alt="telephone">
+                            <p class="icon" class="text">+7-700-900-6677</p>
+                        </li>
+                    </ul>
+                    <h4 class="heading_title">ONLINE SERVICES</h4>
+                    <ul class="contacts__list">
+                        <li class="contacts__list_item">
+                            <img class="icon" src="img/web.svg" alt="web">
+                            <p class="text">www.site.com</p>
+                        </li>
+                        <li class="contacts__list_item">
+                            <img class="icon" src="img/email.svg" alt="email">
+                            <p class="text">hello.site@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form">
+                    <h4 class="heading_title">SEND US MESSAGE</h4>
+                    <p class="text text_form">Full name</p>
+                    <input type="text" class="input-text" placeholder="Your name"><br>
+                    <p class="text text_form">Email</p>
+                    <input type="email" class="input-text" placeholder="Your Email"><br>
+                    <p class="text text_form">Message</p>
+                    <textarea cols="30" rows="10" class="input-text" placeholder="Your Message"></textarea><br>
+                    <button class="contacts__button" type="submit">SUBMIT</button>
+                </div>
+            </form>
+            <div class="map container">
+                <div id="YMapsID" style="width:100%;height:400px"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__top_info">
+                        <h3 class="footer__heading">Interested to work with our team?</h3>
+                        <p class="text text_footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                            cumque. Totam sit
+                            accusamus perspiciatis aliquam dolores deleniti exercitationem, debitis voluptatem amet hic
+                        </p>
+                    </div>
+                    <div class="footer__link">
+                        <a class="text text_link" href="#">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <ul class="footer__contacts">
+                        <li class="text text_contact">One of the famous companies @</li>
+                        <div class="footer__contacts_box">
+                            <li class="text text_contact">+7 700 800 44 55</li>
+                            <li class="text text_contact">example@mail.ru</li>
+                        </div>
+                    </ul>
+                    <div class="footer__copy">
+                        <p class="text text_copy">All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Создает обработчик события window.onLoad
+        YMaps.jQuery(function () {
+            // Создает экземпляр карты и привязывает его к созданному контейнеру
+            var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+            // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+            map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+        })
+    </script>
+</body>
+
+</html>
